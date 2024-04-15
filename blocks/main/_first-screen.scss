@@ -1,0 +1,41 @@
+.first-screen{
+    display: flex;
+    align-items: $mid;
+    flex-direction: column;
+    margin-top: -270px;
+    
+}
+
+.first-screen__h1{
+    @include sett(2.65vw, 700, Noto Serif, 49.03px, $mid);
+    color: white;
+    margin-bottom: 30px;
+    @media (max-width: 1024px){
+        font-size: 42px;
+    }
+}
+
+.first-screen__hr{
+    width: 100%;
+}
+
+.first-screen__button{
+    border: 1px solid white;
+    color: white;
+    background-color: #333333;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    @include sett(1.32vw, 500, Gilroy, 21.19px, $mid);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    &:hover{
+        background-color: white;
+        color: #333333;
+        transition: all 0.4s;
+    }
+    @media (max-width: 1024px){
+        font-size: 22px;
+    }
+}

@@ -1,0 +1,82 @@
+.footer{
+    width: 1110px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.footer__col{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.footer__h{
+    text-transform: uppercase;
+    @include sett(1.32vw, 500, Gilroy, 25.2px, left);
+    letter-spacing: 0.1em;
+    margin-block-end: 10px;
+    @media (max-width: 1024px){
+        font-size: 22px;
+    }
+}
+
+.footer__p{
+    @include sett(1.03vw, 400, Gilroy, 21px, left);
+    @media (max-width: 1024px){
+        font-size: 16px;        
+    }
+}
+
+.footer__col-1_ul-li{
+    list-style-type: none;
+    @include sett(1.03vw, 400, Gilroy, 30px, left);
+    @media (max-width: 1024px){
+        font-size: 16px;        
+    }
+}
+
+.footer__col-1_ul{
+    padding-inline-start: 0;
+}
+
+.footer__col-3_ul{
+    padding-left: 20px;
+}
+
+.footer__col-3_ul-li{
+    @include sett(1.03vw, 400, Gilroy, 30px, left);
+    list-style-image: url("lib/entypo_old-phone.png");
+    &:last-of-type{
+        list-style-image: url("lib/entypo_mail.png");
+    }
+    @media (max-width: 1024px){
+        font-size: 16px;        
+    }
+}
+
+.footer__img{
+    display: flex;
+    align-items: $mid;
+}
+
+.footer__col-1, .footer__col-2, .footer__col-3, .footer__col-4{
+    width: 255px;
+}
+
+.footer__pic{
+    margin-right: 20px;
+}
+
+.footer__row_list{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-inline-start: 0;
+    @include sett(1.03vw, 400, Gilroy, 21px, left);
+}
+
+.footer__row_list-item:last-child{
+    font-weight: 600;
+    text-decoration: underline;
+}

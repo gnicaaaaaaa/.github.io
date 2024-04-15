@@ -1,0 +1,55 @@
+.our-salon{
+    margin-top: 100px;
+    background-image: url("lib/Rectangle 6.png");
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: $mid;
+    justify-content: $mid;
+}
+
+.our-salon__p{
+    margin-block-end: 10px;
+    width: 650px;
+    @include sett(1.54vw, 400, Gilroy, 29.4px, $mid);
+    color: white;
+    &:nth-of-type(2){
+        font-size: 18px;
+        line-height: 25.2px;
+        margin-block-end: 50px;
+        @media (max-width: 1024px) {
+            font-size: 18px;
+        }
+    }
+    @media (max-width: 1024px) {
+        font-size: 22px;
+    }
+}
+
+.our-salon__h2{
+    @include sett(2.21vw, 700, Noto Serif, 40.86px, $mid);
+    color: white;
+    margin-block-start: 0;
+    @media (max-width: 1024px) {
+        font-size: 33px;
+    }
+}
+
+.our-salon__button{
+    @include sett(1.32vw, 500, Gilroy, 21.19px, $mid);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    &:hover{
+        background-color: #333;
+        color: white;
+        transition: all 0.3s;
+    }
+    @media (max-width: 1024px) {
+        font-size: 19px;
+    }
+}

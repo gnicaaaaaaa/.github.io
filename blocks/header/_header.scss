@@ -1,0 +1,62 @@
+$mid: center;
+
+@mixin sett($a, $b, $c, $d, $e){
+    font-size: $a;
+    font-weight: $b;
+    font-family: $c;
+    line-height: $d;
+    text-align: $e;
+}
+
+.header{
+    width: 1440px;
+    height: 673px;
+    background-image: url("lib/bgc.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: $mid;
+    align-items: flex-start;
+    @include sett(1.03vw, 400, Gilroy, 21px, $mid);
+    color: #FFFFFF;
+    @media (max-width: 1024px){
+        width: 1141px;
+        height: 700px;
+    }
+}
+
+
+.header__ul li{
+    display: inline;
+    list-style-type: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    &:first-of-type{
+        display: flex;
+        align-items: $mid;
+    }
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.header__ul{
+    display: flex;
+    align-items: $mid;
+    padding-right: 40px;
+    padding-top: 20px;
+    @media (max-width: 1024px){
+        font-size: 16px;;
+    }
+}
+
+.header__vect{
+    padding-right: 10px;
+}
+
+.header__logo{
+    padding-top: 20px;
+    @media (max-width: 1024px){
+        width: 250px;
+    }
+}

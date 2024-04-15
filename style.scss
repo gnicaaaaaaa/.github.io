@@ -1,0 +1,23 @@
+@import 'blocks/header/header';
+@import 'blocks/main/first-screen';
+@import 'blocks/main/second-screen';
+@import 'blocks/main/our-salon';
+@import 'blocks/main/blog';
+@import 'blocks/main/gallery';
+@import 'blocks/main/subscribe';
+@import 'blocks/footer/footer';
+
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
